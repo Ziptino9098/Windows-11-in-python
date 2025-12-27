@@ -47,3 +47,17 @@ else:
     print("Virus Detected and was removed")
 
 
+
+is_system_stable = True
+
+if is_system_stable == False:
+    print("")
+
+else:
+    print("System Crash: ERR_CRITICAL_PROCESS_DIED")
+
+
+command = input("Enter Command: ")
+
+print(command+ "Was executed successfully")
+
