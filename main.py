@@ -16,3 +16,5 @@ print(windows_password + " Will be your password")
 password = input("Enter password to login:")
 if password == windows_password:
     print("Logged in")
+else: print("Wrong password")
+
