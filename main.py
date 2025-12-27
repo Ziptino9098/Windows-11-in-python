@@ -17,4 +17,6 @@ password = input("Enter password to login:")
 if password == windows_password:
     print("Logged in")
 else: print("Wrong password")
+app_to_be_installed = input("What app will you install:")
+print(app_to_be_installed + " Will be installed")
 
