@@ -1,4 +1,4 @@
-
+#This is a mimic of Windows 11 installer and command prompt to show a basic os coded in python
 import time
 
 # Edition selector
@@ -102,6 +102,39 @@ if com2 == "reboot":
     print("Rebooted")
 else:
     print("Command Executed Successfully")
+
+
+command3 = input("Enter Command:")
+if command3 == "reboot":
+    print("Rebooting...")
+    time.sleep(3)
+    print("Rebooted")
+elif command3 == "del":
+    file_to_be_deleted = input("What file do you want to delete?")
+    print(file_to_be_deleted + " has been deleted")
+
+elif command3 == "install":
+    input("What app do you want to install?")
+    time.sleep(3)
+    print("Installed")
+
+else:
+    print("Command Executed Successfully")
+
+
+willreboot = input("You need to restart to finish installing the app (y/n): ")
+if willreboot == "y":
+    print("Rebooting...")
+    time.sleep(3)
+    print("Rebooted")
+else:
+    print("System will not be rebooted")
+
+#BSOD Check
+if is_system_stable == True:
+    print("System is stable")
+else:
+    print("ERR_CRITICAL_PROCESS_DIED")
 
 
 
